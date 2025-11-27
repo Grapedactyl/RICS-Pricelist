@@ -199,6 +199,39 @@ header p {
     font-weight: 500;
 }
 
+/* Trait-specific styles */
+.trait-description {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.metadata ul {
+    margin: 5px 0;
+    padding-left: 20px;
+}
+
+.metadata li {
+    margin-bottom: 2px;
+}
+
+/* Make description column more readable */
+.items-table td:nth-child(4) {
+    min-width: 200px;
+    max-width: 400px;
+}
+
+/* Mobile adjustments for traits */
+@media (max-width: 768px) {
+    .items-table td:nth-child(4) {
+        min-width: 150px;
+        max-width: 300px;
+    }
+    
+    .trait-description {
+        font-size: 0.85rem;
+    }
+}
+
 /* Priority indicators for mobile */
 .mobile-priority {
     display: none;
